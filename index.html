@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>3D翻转效果</title>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		for(var i=0;i<10;i++){
+			$("#overturn_td"+i).mouseover(function(){
+
+				var getid=this.id.substr(11);
+				//alert(getid);
+				$("#overturn_front"+getid).css({"-webkit-transform":"rotateY(-180deg)"});
+				$("#overturn_back"+getid).css({"-webkit-transform":"rotateY(0deg)"});
+			});
+			$("#overturn_td"+i).mouseleave(function(){
+				var getid=this.id.substr(11);
+				$("#overturn_front"+getid).css({"-webkit-transform":"rotateY(0deg)"});
+				$("#overturn_back"+getid).css({"-webkit-transform":"rotateY(-180deg)"});
+			});
+		}
+		
+
+	});
+</script>
+
+<body>
+
+	<h2>3D翻转效果</h2>
+	<h3>by Redstone</h3>
+	<table>
+		<tr>
+			<td id="overturn_td0">
+				<div id="overturn_front0">
+					<img src="image/android.png" alt="Android开发">
+				</div>
+				<div id="overturn_back0">
+					<button>开始学习</button>
+				</div>
+			</td>
+			<td id="overturn_td1">
+				<div id="overturn_front1">
+					<img src="image/ios.png" alt="iOS开发">
+				</div>
+				<div id="overturn_back1">
+					<button>开始学习</button>
+				</div>
+			</td>
+			<td id="overturn_td2">
+				<div id="overturn_front2">
+					<img src="image/html.png" alt="html5开发">
+				</div>
+				<div id="overturn_back2">
+					<button>开始学习</button>
+				</div>
+			</td>
+			<td id="overturn_td3">
+				<div id="overturn_front3">
+					<img src="image/Cocos2d-x.png" alt="Cocos2d-x游戏开发">
+				</div>
+				<div id="overturn_back3">
+					<button>开始学习</button>
+				</div>
+			</td>
+			<td id="overturn_td4">
+				<div id="overturn_front4">
+					<img src="image/c.png" alt="C语言">
+				</div>
+				<div id="overturn_back4">
+					<button>开始学习</button>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td id="overturn_td5">
+				<div id="overturn_front5">
+					<img src="image/Java.png" alt="Java语言">
+				</div>
+				<div id="overturn_back5">
+					<button>开始学习</button>
+				</div>
+			</td>
+			<td id="overturn_td6">
+				<div id="overturn_front6">
+					<img src="image/php.png" alt="php语言">
+				</div>
+				<div id="overturn_back6">
+					<button>开始学习</button>
+				</div>
+			</td>
+			<td id="overturn_td7">
+				<div id="overturn_front7">
+					<img src="image/swift.png" alt="Swift">
+				</div>
+				<div id="overturn_back7">
+					<button>开始学习</button>
+				</div>
+			</td>
+			<td id="overturn_td8">
+				<div id="overturn_front8">
+					<img src="image/bootstrap.png" alt="Bootstrap">
+				</div>
+				<div id="overturn_back8">
+					<button>开始学习</button>
+				</div>
+			</td>
+			<td id="overturn_td9">
+				<div id="overturn_front9">
+					<img src="image/unity3D.png" alt="Unity3D">
+				</div>
+				<div id="overturn_back9">
+					<button>开始学习</button>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

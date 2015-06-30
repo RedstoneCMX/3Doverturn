@@ -1,0 +1,90 @@
+body h2,h3{
+	text-align: center;
+	font-family: 微软雅黑;
+}
+#overturn_front0,#overturn_front1,#overturn_front2,#overturn_front3,#overturn_front4,
+#overturn_front5,#overturn_front6,#overturn_front7,#overturn_front8,#overturn_front9{
+	height:200px;
+	width:200px;
+	/*-webkit-box-shadow:1px 1px 1px 1px rgba(20%,20%,40%,0.5);*/
+	-webkit-transition:-webkit-transform 0.6s;
+	position:absolute;
+	-webkit-backface-visibility:hidden;
+	z-index: 2;
+	-webkit-transform: rotateY(0deg);
+	top:0;
+}
+#overturn_back0,#overturn_back1,#overturn_back2,#overturn_back3,#overturn_back4,
+#overturn_back5,#overturn_back6,#overturn_back7,#overturn_back8,#overturn_back9{
+	height:200px;
+	width:200px;
+	/*-webkit-box-shadow:1px 1px 1px 1px rgba(20%,20%,40%,0.5);*/
+	-webkit-transition:-webkit-transform 0.6s;
+	cursor: pointer;
+	background:#f5f5f5;
+	-webkit-backface-visibility:hidden;
+	position: absolute;
+	-webkit-transform: rotateY(-180deg);
+	top:0;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	margin: auto;
+}
+table td{
+	height: 200px;
+	width: 200px;
+	border: 1px solid #E4E4E4;
+	position: relative;
+	padding: 0;
+	text-align: center;
+	line-height: 200px;
+}
+table td img{
+	width: 140px;
+	height: 140px;
+	margin-top: 30px;
+}
+
+table td button{
+	border:none;
+	background: #35b558;
+	width: 140px;
+	height:36px;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	-webkit-transition:background 0.8s;
+	margin-top: 82px;
+}
+
+table td button:hover{
+	background: #35b57b;
+}
+#overturn_front{
+	height:200px;
+	width:200px;
+	-webkit-box-shadow:1px 1px 1px 1px rgba(20%,20%,40%,0.5);
+	-webkit-transition:-webkit-transform 0.6s;
+	cursor: pointer;
+	position:absolute;
+	-webkit-backface-visibility:hidden;
+	z-index: 2;
+	-webkit-transform: rotateY(0deg);
+}
+
+#overturn_back{
+	height:200px;
+	width:200px;
+	-webkit-box-shadow:1px 1px 1px 1px rgba(20%,20%,40%,0.5);
+	-webkit-transition:-webkit-transform 0.6s;
+	cursor: pointer;
+	background:#f5f5f5;
+	-webkit-backface-visibility:hidden;
+	position: absolute;
+	-webkit-transform: rotateY(-180deg);
+}
+
